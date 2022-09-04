@@ -203,6 +203,12 @@ public class OperacoesRecursivas
         if (y == 1)
             return x;
 
+        if (x == 0)
+            return 0;
+
+        if (x == 1)
+            return y;
+
         return (soma(x, multiplicacao(x, subtracao(y, 1))));
     }
 }
